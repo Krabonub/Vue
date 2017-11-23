@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Gallery (SKOK)</title>
+    <script src ='https://unpkg.com/vue'></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!--<div id="gallery_div">
+        <div id="drop_down_menu">Images<i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+        <div id="images"></div>
+    </div>-->
+    <div id="gallery_div">
+        <drop-down :options="menu_options"></drop-down>
+        <image-gallery :picture_url="current_url"></image-gallery>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    font: normal 16px 'Roboto', sans-serif;
+}
+
+#drop_down_menu {
+    background: #FE2E64;
+    width: 210px;
+    height:40px;
+    color:#FFFFFF;
+    font:20px 'Roboto', sans-serif;
+    display:flex;
+    align-items:center;
+    padding: 0 12px;
+    justify-content:space-between;
+    box-sizing:border-box;
+}
+
+.fa-sort-desc{
+    position: relative ;
+    top: -4px ;
+}
+.drop_down_list{
+    position:absolute;
+    width:210px;
+    height:auto;
+    background:	#A9A9A9;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+}
+.drop_down_options{
+    font: normal 16px 'Roboto', sans-serif;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    box-sizing:border-box;
+    border:1px solid #FFFFFF;
+    color:#FFFFFF;
+    height:40px;
+    padding: 0 12px;
+}
+.drop_down_options:hover{
+    background:	#696969;
+}
+.image_div img{
+    width:500px;
+    height:auto;
+}
