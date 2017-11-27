@@ -1,0 +1,85 @@
+html{
+    font:18px 'Lato', sans-serif;
+}
+.wrapper{
+    padding:30px 0 30px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#nav_list{
+    list-style-type:none;
+}
+#nav_list *{
+    display:inline;
+}
+.nav_element{
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
+    color:#696969;
+}
+nav *{
+    margin: 0 20px;
+}
+#main_logo{
+    max-width:180px;
+    height:auto;
+}
+.gallery_img{
+    height:auto;
+    width:auto;
+    max-width:80vw;
+    max-height: 50vh;
+}
+.gallery_select{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 0 0 15px;
+    width: 250px;
+    height: 45px;
+    background:#808B96 ;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+#arrow_down{
+    padding: 0 17px 8px 0;
+}
+.select_drop-down{
+    box-sizing:border-box;
+    background:#B2BABB;
+    position:absolute;
+    width:265px;
+    cursor:pointer;
+    overflow:auto;
+    max-height:500px;
+}
+.select_drop-down_option{
+    display:flex;
+    align-items:center;
+    height:40px;
+    color:#FFFFFF;
+    box-sizing:border-box;
+    padding:0 0 0 15px;
+    border-top:1px solid #FFFFFF;
+}
+.select_drop-down_option:hover{
+    color:#FFFFFF;
+    background:#2E4053;
+}
+#vue_element{
+    padding:0 100px;
+}
+#router-view{
+    padding: 50px 50px;
+    height: 60vh;
+}
+footer{
+    font-size:14px;
+    color:#808B96;
+}
+#author_name{
+    font-size:16px;
+    color:#000000;
+}

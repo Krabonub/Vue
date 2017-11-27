@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Router (homework3) - Skok</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+    <div id="vue_element">
+        <header class="wrapper">
+            <img id="main_logo" src="http://a-level.com.ua/wp-content/uploads/2017/01/logo-3.png">
+            <nav>
+                <ul id="nav_list">
+                    <li><router-link class="nav_element" to="/Space">Космос</router-link></li>
+                    <li><router-link class="nav_element" to="/Landscapes">Пейзажи</router-link></li>
+                    <li><router-link class="nav_element" to="/Animals">Животные</router-link></li>
+                    <li><router-link class="nav_element" to="/People">Люди</router-link></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <router-view id="router-view"></router-view>
+        </main>
+        <footer>Created by <span id="author_name">Skok Artyom</span></footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="components.js"></script>
+    <script src="router.js"></script>
+    <script src="Vue.js"></script>
+</body>
+</html>

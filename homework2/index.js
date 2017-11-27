@@ -18,9 +18,9 @@ Vue.component("drop-down",{
                 return true
             }
         }
-},
+    },
     template:`<div>
-        <div id="drop_down_menu" v-on:click="change_visibility">Images<i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+        <div id="drop_down_menu" v-on:click="change_visibility">Images<i class="fa fa-sort-desc"></i></div>
         <div v-if="if_dropped" class="drop_down_list">
             <div v-for="item in options" class="drop_down_options" v-on:click="to_select_option">{{item}}</div>
         </div>
