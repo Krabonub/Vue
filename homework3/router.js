@@ -24,7 +24,8 @@ const Routes_arr = [
         path: "/People",
         component: Gallery_page,
         props: {
-            select_options: PeopleOptions
+            select_options: PeopleOptions,
+
         }
     },
 ];

@@ -1,0 +1,33 @@
+.gallery{
+  display:flex;
+  flex-direction:row;
+}
+img{
+  height:150px;
+  width:auto;
+}
+.button_div{
+  opacity:0.5;
+  font:15px sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:	#E6E6FA;
+  min-width:50px;
+  cursor:pointer;
+  transition:opacity 0.05s linear;
+}
+.button_div:hover{
+  opacity:1;
+}
+#image_area{
+    width:300px;
+    display:flex;
+    justify-content:center;
+    overflow:hidden;
+}
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

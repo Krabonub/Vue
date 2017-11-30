@@ -3,12 +3,16 @@ const Gallery_select = {
         options: {
             type: Object,
             required: true
+        },
+        selected_item:{
+            type:String,
+            required:false,
+            default:"Select image"
         }
     },
     data: function () {
         return {
             drop_down_visibility: false,
-            selected_item: "",
         };
     },
     computed: {
@@ -26,14 +30,14 @@ const Gallery_select = {
         },
         to_select_item: function () {
             this.drop_down_visibility = false;
-            this.selected_item = event.target.innerHTML;
+            this.selected_item = event.target.innerHTML.trim();
             console.log(this.selected_item);
         }
     },
     template: `
     <div>
       <div class="gallery_select" v-on:click="to_change_drop_down_visibility">
-        {{selected_item||"Select image"}}<i id="arrow_down" class="fa fa-sort-desc"></i>
+        {{selected_item}}<i id="arrow_down" class="fa fa-sort-desc"></i>
       </div>
       <div v-if="drop_down_visibility" class="select_drop-down">
         <div v-for="item in select_options" v-on:click="to_select_item" class="select_drop-down_option">
@@ -57,6 +61,6 @@ const Gallery_page = {
         "gallery-select": Gallery_select
     },
     template: `
-    <gallery-select v-bind:options="select_options"></gallery-select>
+    <gallery-select :options="select_options" selected_item="Select image"></gallery-select>
   `
 };
