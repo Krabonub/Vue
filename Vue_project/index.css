@@ -1,0 +1,118 @@
+body{
+  margin:0;
+  background-image:url(https://img1.goodfon.ru/original/1920x1200/9/6f/minimalizm-gradient-background.jpg);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  overflow:hidden;
+}
+.panel{
+  display:flex;
+  height:100vh;
+  width:100vw;
+  align-items:stretch;
+  justify-content:center;
+  cursor:pointer;
+  transition:all 0.5s;
+}
+html{
+  padding:0;
+}
+.navigation{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#FFFFFF;
+  background:#120A2A;
+  box-sizing:border-box;
+  width:25%;
+  transition:all 0.5s;
+  font-family: 'Pacifico', cursive;
+}
+.navigation:hover{
+  background:none;
+}
+.nav_name{
+  height:20vh;
+  margin-bottom:5vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  font-family: 'Pacifico', cursive;
+  font-size:2.8vw;
+  box-sizing:border-box;
+  padding:0 4vw;
+}
+.nav_description{
+  height:20vh;
+  margin-top:5vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 4vw;
+  font-family: 'Nunito', sans-serif;
+  font-weight:200;
+  font-style:italic;
+  font-size:1.8vw;
+}
+.border{
+  width:30%;
+  border-top:1px solid #FFFFFF;
+}
+.navigation-top{
+  height:10vh;
+}
+router-link{
+  color:#FFFFFF;
+  text-decoration:none;
+}
+main{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:5px;
+  width:calc(100vw - 10px);
+  background:#FFFFFF;
+  border-radius:3px;
+  height:calc(90vh - 10px);
+  transition:all 0.5s;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.p-slim{
+  height:10vh;
+  margin:0;
+}
+.p-full{
+  height:100vh;
+}
+.nav_name-full{
+  height:20vh;
+  margin-bottom:5vh;
+  font-size:2.8vw;
+}
+.nav_name-slim{
+  margin:0;
+  font-size:1.8vw;
+  animation:nav_name_to_slim 0.8s ease-in normal;
+  animation-fill-mode: forwards;
+}
+@keyframes nav_name_to_slim{
+  0%{
+    margin-bottom:0%;
+  }
+  50%{
+    margin-bottom:100%;
+  }
+  100%{
+    margin-bottom:0%;
+  }
+}
+
+
