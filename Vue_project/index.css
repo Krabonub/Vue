@@ -166,12 +166,22 @@ main {
     float:right;
 }
 .spoiler_button{
-    margin:20px;
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
     background: #5A18C9;
     font-family: 'Nunito', sans-serif;
     color:white;
     padding:5px 10px;
     cursor:pointer;
+}
+.spoiler{
+    margin: 0 20px;
+}
+.center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 footer{
     display:flex;
@@ -187,7 +197,6 @@ footer span{
     color:#FFFFFF;
 }
 .personal_info_table{
-    margin:20px;
     font-family: 'Muli', sans-serif;
 }
 .personal_info_table td,th{
@@ -196,4 +205,115 @@ footer span{
 }
 .personal_info_table tr{
     height:30px;
+}
+.programming_skills_pic{
+    height:10vw;
+    width:auto;
+}
+.programming_skills_art{
+    font-family: 'Muli', sans-serif;
+    display:flex;
+    padding:10px 10px 10px 0;
+}
+.container {
+    position: relative;
+}
+
+.frame {
+    max-width: 960px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+}
+
+.frame img {
+    width: 960px;
+    height: 500px;
+    left: 0;
+    position: relative;
+    transition: left 1s;
+}
+
+.left, .right {
+    top: 220px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0.3;
+    background: #C0C0C0;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.left:hover, .right:hover {
+    opacity: 0.5;
+}
+
+.left {
+    left: 5px;
+}
+
+.right {
+    left: 895px;
+}
+
+.fa-chevron-right {
+    margin-left: 3px;
+}
+
+.fa-chevron-left {
+    margin-right: 3px;
+}
+#drop_down_menu {
+    background: #FE2E64;
+    width: 210px;
+    height:40px;
+    color:#FFFFFF;
+    font:20px 'Roboto', sans-serif;
+    display:flex;
+    align-items:center;
+    padding: 0 12px;
+    justify-content:space-between;
+    box-sizing:border-box;
+}
+
+.fa-sort-desc{
+    position: relative ;
+    top: -4px ;
+}
+.drop_down_list{
+    position:absolute;
+    width:210px;
+    height:auto;
+    background:	#A9A9A9;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+}
+.drop_down_options{
+    font: normal 16px 'Roboto', sans-serif;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    box-sizing:border-box;
+    border-bottom:1px solid #FFFFFF;
+    color:#FFFFFF;
+    height:40px;
+    padding: 0 12px;
+}
+.drop_down_options:hover{
+    background:	#696969;
+}
+.image_div img{
+    width:auto;
+    height:50vh;
+}
+.text_page{
+    font-family: 'Muli', sans-serif;
 }

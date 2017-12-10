@@ -66,7 +66,9 @@ const gallery=new Vue({
             return  ops;
         }
     },
-});
-gallery.$on("option_is_selected",function(choise){
-    this.current_url=images[choise];
+    mounted:function(){
+        this.$on("option_is_selected",function(choise){
+            this.current_url=images[choise];
+        });
+    }
 });

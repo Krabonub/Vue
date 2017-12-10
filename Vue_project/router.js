@@ -4,8 +4,8 @@ routesArr = [
         component: Personal_data,
     },
     {
-        path: "/Education",
-        component: Education
+        path: "/Examples",
+        component: Examples
     },
     {
         path: "/Programming_skills",

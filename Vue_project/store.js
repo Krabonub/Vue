@@ -4,10 +4,10 @@ const store = new Vuex.Store({
     },
     mutations: {
         change_tab_is_selected: (state) => {
-            state.tab_is_selected = true;//!state.tab_is_selected;
+            state.tab_is_selected = true;
         },
         to_start_screen: (state) => {
-            state.tab_is_selected = false;//!state.tab_is_selected;
+            state.tab_is_selected = false;
         }
     }
 });

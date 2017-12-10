@@ -35,7 +35,7 @@ body {
     justify-content:flex-start;
     align-items:center;
     box-sizing:border-box;
-    border:1px solid #FFFFFF;
+    border-bottom:1px solid #FFFFFF;
     color:#FFFFFF;
     height:40px;
     padding: 0 12px;
