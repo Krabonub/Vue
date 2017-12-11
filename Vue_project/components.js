@@ -399,9 +399,35 @@ const Examples = {
 };
 
 const Blog = {
+    data:function(){
+        return{
+            twits:Twits,
+            search_line:""
+        };
+    },
+    computed:{
+        filteredTwits:function(){
+            return this.twits.filter((twit)=>{
+                return twit.text.toLowerCase().match(this.search_line.toLowerCase())||twit.date.toLowerCase().match(this.search_line.toLowerCase())||twit.author.toLowerCase().match(this.search_line.toLowerCase());
+            });
+        }
+    },
     template: `
-  <div>
-    Blog
+  <div class="blog">
+    <img src="https://www.webnode.com/blog/wp-content/uploads/2016/10/Blog-intro.jpg">
+    <section class="Twitter_feed">
+            <h1><i id="twitter" class="fa fa-twitter" aria-hidden="true"></i> Twitter feed</h1>
+            <input type="text" class="search" v-model="search_line" placeholder="search here">
+            <div v-for="item in filteredTwits" class="twit">
+                <p class="twitter_text"><span class="author"> @{{item.author}} : </span>
+                    {{item.text}}
+                </p>
+                <p class="twitter_date">
+                    {{item.date}}
+                </p>
+            </div>
+           
+    </section>
   </div>
   `
 };

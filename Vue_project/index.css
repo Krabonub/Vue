@@ -209,6 +209,7 @@ footer span{
 .programming_skills_pic{
     height:10vw;
     width:auto;
+    margin: 10px;
 }
 .programming_skills_art{
     font-family: 'Muli', sans-serif;
@@ -316,4 +317,49 @@ footer span{
 }
 .text_page{
     font-family: 'Muli', sans-serif;
+}
+.blog img{
+    float:right;
+    width:20vw;
+    height:auto;
+}
+.Twitter_feed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-size:18px;
+    width:60vw;
+
+}
+.author {
+    color: #515151;
+    font-size: 15px;
+}
+.twitter_text {
+    line-height:20px;
+    color: #888888;
+    margin: 0;
+    font-size: 14px;
+}
+.twitter_date {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    color: #b0b0b0;
+    font-family: 'Lato', sans-serif;
+}
+#twitter {
+    color: #386bb1;
+}
+.Twitter_feed a{
+    color: #3c92d0;
+    text-decoration:none;
+}
+.twit{
+    margin: 20px 0;
+}
+.Twitter_feed input{
+    font-size: 16px;
+    padding:5px;
+
 }
