@@ -52,7 +52,7 @@ const Navigation = {
     </div>
     <div @click="to_panel" class="nav_div">
         <router-link to="/Examples" tag="div" class="navigation">
-            <div class="nav_name">Eaxamples</div>
+            <div class="nav_name">Examples</div>
             <transition name="fade">
                 <div v-if="!is_paneled" class="border"></div>
             </transition>
