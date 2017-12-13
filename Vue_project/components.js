@@ -417,7 +417,7 @@ const Blog = {
     <img src="https://www.webnode.com/blog/wp-content/uploads/2016/10/Blog-intro.jpg">
     <section class="Twitter_feed">
             <h1><i id="twitter" class="fa fa-twitter" aria-hidden="true"></i> Twitter feed</h1>
-            <input type="text" class="search" v-model="search_line" placeholder="search here">
+            <input type="text" class="search" v-model="search_line" placeholder="search here"><i class="fa fa-search" aria-hidden="true"></i>
             <div v-for="item in filteredTwits" class="twit">
                 <p class="twitter_text"><span class="author"> @{{item.author}} : </span>
                     {{item.text}}
@@ -431,22 +431,3 @@ const Blog = {
   </div>
   `
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
